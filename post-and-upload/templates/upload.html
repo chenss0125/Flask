@@ -1,0 +1,14 @@
+
+<title>upload new File</title>
+<h1>Upload new File</h1>
+<form action="../upload" method=post enctype=multipart/form-data>
+    <p><input type=file name=the_file>
+        <input type=submit value=Upload>
+</form>
+{% if filename %}
+<h1>file {{ filename }} is upload success</h1>
+{% elif error %}
+<h1>{{ error }}</h1>
+{% else %}
+<h1>welcome!</h1>
+{% endif %}

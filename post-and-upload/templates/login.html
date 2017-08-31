@@ -1,0 +1,15 @@
+
+<title>Login Page</title>
+<form action="/login" method="GET">
+User name:<br>
+    <input type="text" name="username" />
+    <br>User password:<br>
+    <input type="password" name="password" />
+<br>
+    <input type="submit" value="submit" />
+</form>
+{% if error %}
+<h1>Hello {{ error }}!</h1>
+{% else %}
+<h1>welcome!</h1>
+{% endif %}
